@@ -1,4 +1,4 @@
-﻿namespace Veritas
+﻿namespace Dolos
 {
     partial class Form1
     {

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Veritas")]
+[assembly: AssemblyTitle("Dolos")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Veritas")]
+[assembly: AssemblyProduct("Dolos")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("50ee53ad-d3c0-4946-bfa7-c8b145d993a3")]
+[assembly: Guid("b495379f-87f0-439d-a6bd-b2b4e7e249d0")]
 
 // Version information for an assembly consists of the following four values:
 //

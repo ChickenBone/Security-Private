@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veritas", "Veritas\Veritas.csproj", "{50EE53AD-D3C0-4946-BFA7-C8B145D993A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dolos", "Dolos\Dolos.csproj", "{B495379F-87F0-439D-A6BD-B2B4E7E249D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{50EE53AD-D3C0-4946-BFA7-C8B145D993A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{50EE53AD-D3C0-4946-BFA7-C8B145D993A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{50EE53AD-D3C0-4946-BFA7-C8B145D993A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{50EE53AD-D3C0-4946-BFA7-C8B145D993A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B495379F-87F0-439D-A6BD-B2B4E7E249D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B495379F-87F0-439D-A6BD-B2B4E7E249D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B495379F-87F0-439D-A6BD-B2B4E7E249D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B495379F-87F0-439D-A6BD-B2B4E7E249D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {953917F3-FA2E-407D-889F-62BB38FD4633}
+		SolutionGuid = {E966C66F-B7E0-43F0-9AF8-CD979B2B35F3}
 	EndGlobalSection
 EndGlobal

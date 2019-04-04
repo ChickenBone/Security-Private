@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{50EE53AD-D3C0-4946-BFA7-C8B145D993A3}</ProjectGuid>
+    <ProjectGuid>{B495379F-87F0-439D-A6BD-B2B4E7E249D0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Veritas</RootNamespace>
-    <AssemblyName>Veritas</AssemblyName>
+    <RootNamespace>Dolos</RootNamespace>
+    <AssemblyName>Dolos</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
