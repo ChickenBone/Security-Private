@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Dolos")]
+[assembly: AssemblyTitle("Dolos Encryption Tool")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Dolos")]
+[assembly: AssemblyProduct("Dolos Encryption Tool")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("b495379f-87f0-439d-a6bd-b2b4e7e249d0")]
+[assembly: Guid("b7bf8d17-f6d2-43bf-87bb-1c0cae8fef93")]
 
 // Version information for an assembly consists of the following four values:
 //

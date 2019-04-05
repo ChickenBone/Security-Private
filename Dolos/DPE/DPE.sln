@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dolos Payload Execution", "Dolos Payload Execution\Dolos Payload Execution.csproj", "{D688877B-EFFF-4807-94A0-88896FEBA4DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D688877B-EFFF-4807-94A0-88896FEBA4DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D688877B-EFFF-4807-94A0-88896FEBA4DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D688877B-EFFF-4807-94A0-88896FEBA4DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D688877B-EFFF-4807-94A0-88896FEBA4DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87F37AF8-6337-4786-9967-72C02E21C935}
+	EndGlobalSection
+EndGlobal

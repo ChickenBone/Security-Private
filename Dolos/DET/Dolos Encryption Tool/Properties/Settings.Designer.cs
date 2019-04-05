@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Dolos.Properties
+namespace Dolos_Encryption_Tool.Properties
 {
 
 
