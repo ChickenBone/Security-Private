@@ -1,0 +1,10 @@
+C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DET\Dolos Encryption Tool\bin\Debug\Dolos Encryption Tool.exe.config
+C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DET\Dolos Encryption Tool\bin\Debug\Dolos Encryption Tool.exe
+C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DET\Dolos Encryption Tool\bin\Debug\Dolos Encryption Tool.pdb
+C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DET\Dolos Encryption Tool\obj\Debug\Dolos Encryption Tool.csprojAssemblyReference.cache
+C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DET\Dolos Encryption Tool\obj\Debug\Dolos_Encryption_Tool.Form1.resources
+C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DET\Dolos Encryption Tool\obj\Debug\Dolos_Encryption_Tool.Properties.Resources.resources
+C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DET\Dolos Encryption Tool\obj\Debug\Dolos Encryption Tool.csproj.GenerateResource.cache
+C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DET\Dolos Encryption Tool\obj\Debug\Dolos Encryption Tool.csproj.CoreCompileInputs.cache
+C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DET\Dolos Encryption Tool\obj\Debug\Dolos Encryption Tool.exe
+C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DET\Dolos Encryption Tool\obj\Debug\Dolos Encryption Tool.pdb
