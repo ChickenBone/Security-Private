@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -35,30 +36,33 @@ namespace Dolos_Encryption_Tool
             String encrypted = "";
             bool fatal = false;
             log("[i] Begining conversion of payload");
-            log("[i] Removing formating");
-            try
+            if (checkBox1.Checked)
             {
-                cleanPayload = string.Join(
-                Environment.NewLine,
-                Payload.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries)
-                .Select(fooline => fooline.Trim())
-                );
-                Dirty = false;
+                log("[i] Removing formating");
+                try
+                {
+                    cleanPayload = Regex.Replace(Payload, @"\s+", "");
+                    Dirty = false;
+                }
+                catch
+                {
+                    Dirty = true;
+                    log("[!] Error in removing whitespace!");
+                }
             }
-            catch
+            else
             {
                 Dirty = true;
-                log("[!] Error in removing whitespace!");
             }
             if (!Dirty)
             {
                 log("[i] Formatting Removed Successfully");
-                plaintext = System.Text.Encoding.UTF8.GetBytes(cleanPayload);
+                plaintext = System.Text.Encoding.Unicode.GetBytes(cleanPayload);
             }
             else
             {
                 log("[i] Formatting Not Removed Successfully");
-                plaintext = System.Text.Encoding.UTF8.GetBytes(Payload);
+                plaintext = System.Text.Encoding.Unicode.GetBytes(Payload);
             }
             log("[i] Converting to B64");
             try
@@ -74,7 +78,8 @@ namespace Dolos_Encryption_Tool
             log("[i] Encrypting");
             if (!fatal)
             {
-                randomString = RandomString(400);
+                richTextBox2.Text = base64;
+                randomString = Regex.Replace(RandomString(400), @"\s+", "");
                 log($"[!] Random String Generated");
                 richTextBox1.Text = randomString;
                 log($"[!] Building Encryption Key");
