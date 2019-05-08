@@ -1,7 +1,0 @@
-C:\Users\DaOra\source\repos\Voyager\Voyager\bin\Debug\Voyager.exe.config
-C:\Users\DaOra\source\repos\Voyager\Voyager\bin\Debug\Voyager.exe
-C:\Users\DaOra\source\repos\Voyager\Voyager\bin\Debug\Voyager.pdb
-C:\Users\DaOra\source\repos\Voyager\Voyager\obj\Debug\Voyager.csprojAssemblyReference.cache
-C:\Users\DaOra\source\repos\Voyager\Voyager\obj\Debug\Voyager.csproj.CoreCompileInputs.cache
-C:\Users\DaOra\source\repos\Voyager\Voyager\obj\Debug\Voyager.exe
-C:\Users\DaOra\source\repos\Voyager\Voyager\obj\Debug\Voyager.pdb
