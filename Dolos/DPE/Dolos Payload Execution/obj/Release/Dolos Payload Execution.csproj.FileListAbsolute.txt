@@ -1,7 +1,7 @@
-C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DPE\Dolos Payload Execution\bin\Release\Dolos Payload Execution.exe.config
-C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DPE\Dolos Payload Execution\bin\Release\Dolos Payload Execution.exe
-C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DPE\Dolos Payload Execution\bin\Release\Dolos Payload Execution.pdb
-C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DPE\Dolos Payload Execution\obj\Release\Dolos Payload Execution.csprojAssemblyReference.cache
 C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DPE\Dolos Payload Execution\obj\Release\Dolos Payload Execution.csproj.CoreCompileInputs.cache
-C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DPE\Dolos Payload Execution\obj\Release\Dolos Payload Execution.exe
-C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DPE\Dolos Payload Execution\obj\Release\Dolos Payload Execution.pdb
+C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DPE\Dolos Payload Execution\bin\Release\Dolos Updater.exe.config
+C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DPE\Dolos Payload Execution\bin\Release\Dolos Updater.exe
+C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DPE\Dolos Payload Execution\bin\Release\Dolos Updater.pdb
+C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DPE\Dolos Payload Execution\obj\Release\Dolos Updater.exe
+C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DPE\Dolos Payload Execution\obj\Release\Dolos Updater.pdb
+C:\Users\Wyatt Whorton\Documents\GitHub\Security-Private\Dolos\DPE\Dolos Payload Execution\obj\Release\Dolos Payload Execution.csprojAssemblyReference.cache
